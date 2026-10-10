@@ -1,0 +1,5 @@
+# NAME PATH: only boot/system are effective OTA payloads.
+package-file package-file
+parameter parameter.txt
+boot_a boot.img
+system_a rootfs.img

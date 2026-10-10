@@ -1,0 +1,15 @@
+RK_UBOOT_SPL=y
+RK_UBOOT_CFG_FRAGMENTS="rk3576-ab-test"
+RK_KERNEL_DTS_NAME="rk3576-100ask-dshanpi-a1-ab-v1"
+RK_KERNEL_CFG_FRAGMENTS="rk3576-ab-test-v1.config"
+RK_USE_FIT_IMG=y
+RK_BUILDROOT_BASE_CFG="rk3576_ab_test"
+RK_ROOTFS_EXTRA_OVERLAY_DIRS="ab-test-v1"
+RK_AB_UPDATE=y
+RK_PARAMETER="parameter-ab.txt"
+RK_MISC=y
+RK_MISC_BLANK=y
+# RK_RECOVERY is not set
+# RK_SECURITY is not set
+RK_OTA_PACKAGE_FILE_CUSTOM=y
+RK_OTA_PACKAGE_FILE="ota-package-file-ab-test"
