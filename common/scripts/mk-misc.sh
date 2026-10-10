@@ -29,7 +29,10 @@ build_hook()
 	# The old windows tools don't accept misc > 64K
 	truncate -s 48k "$MISC_IMG"
 
-	if [ "$RK_MISC_BLANK" ]; then
+	if [ "$RK_MISC_AB" ]; then
+		python3 "$RK_SCRIPTS_DIR/mk-ab-misc.py" "$MISC_IMG"
+		notice "Generated initialized A/B misc image"
+	elif [ "$RK_MISC_BLANK" ]; then
 		notice "Generated blank misc image"
 	elif [ "$RK_MISC_RECOVERY" ]; then
 		echo -n "boot-recovery" | \
