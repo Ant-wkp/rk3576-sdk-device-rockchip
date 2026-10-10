@@ -1,0 +1,6 @@
+# Source names only; the OTA engine writes the inactive coherent slot.
+package-file package-file
+parameter parameter.txt
+uboot_a uboot.img
+boot_a boot.img
+system_a rootfs.img

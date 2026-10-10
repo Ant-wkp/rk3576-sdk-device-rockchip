@@ -24,6 +24,13 @@ config RK_MISC_BLANK
 	help
 	  Use blank misc.
 
+config RK_MISC_AB
+	bool "initialized A/B metadata"
+	depends on RK_AB_UPDATE
+	help
+	  Generate valid AVB A/B metadata at misc + 2048, with slot A confirmed
+	  and slot B available as an unconfirmed fallback. No recovery command.
+
 config RK_MISC_RECOVERY
 	bool "for recovery"
 	help
